@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsM1.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="CorDoTexto">Green</Color>
+            <Color x:Key="CorDoFundo">Red</Color>
+            <Color x:Key="CorDoTitulo">Black</Color>
+            
+            <Font x:Key="titulo">10,Bold</Font>
+            <Font x:Key="subtitulo">8</Font>
+
+            <Style x:Key="Botao" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource CorDoTexto}"/>
+                <Setter Property="Font" Value="{StaticResource subtitulo}"/>
+
+            </Style>
+
+        </ResourceDictionary>
 
     </Application.Resources>
 </Application>

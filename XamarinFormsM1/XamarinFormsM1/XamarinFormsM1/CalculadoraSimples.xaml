@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsM1.CalculadoraSimples">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculadora Simples" BackgroundColor="{StaticResource CorDoFundo}" TextColor="{StaticResource CorDoTexto}" Font="{StaticResource titulo}"/>
+            <Label Text="Valor A:" Font="{StaticResource subtitulo}" />
+            <Entry Placeholder="Digite um número" x:Name="etValorA" Keyboard="Numeric" FontSize="Small"/>
+            <Label Text="Valor B:" Font="{StaticResource subtitulo}" />
+            <Entry Placeholder="Digite um número" x:Name="etValorB" Keyboard="Numeric" FontSize="Small"/>
+            <StackLayout Orientation="Vertical">
+                <Button Text="+" Clicked="Executar_Clicked" Style="{StaticResource Botao}"/>
+                <Button Text="-" Clicked="Executar_Clicked" Style="{StaticResource Botao}"/>
+                <Button Text="/" Clicked="Executar_Clicked" Style="{StaticResource Botao}"/>
+                <Button Text="*" Clicked="Executar_Clicked" Style="{StaticResource Botao}"/>                
+            </StackLayout>
+            <Label x:Name="lbResp"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
